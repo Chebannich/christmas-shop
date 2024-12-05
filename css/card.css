@@ -1,0 +1,48 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #ECF3F8;
+  border-radius: 20px;
+  max-width: 310px;
+  cursor: pointer;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card:hover .header-3 {
+    color: var(--color-primary);
+    transition: 0.3s all linear;
+  }
+}
+
+.card img {
+  width: 310px;
+  height: 230px;
+}
+
+.card_discription {
+  height: 112px;
+  width: 100%;
+  background-color: var(--color-static-white);
+  border-radius: 20px;
+  color: var(--color-dark);
+  padding: 20px;
+}
+
+.card_discription .header-4 {
+  margin-bottom: 8px;
+}
+
+.card_discription.work .header-4 {
+  color: var(--color-tag-purple);
+}
+
+.card_discription.health .header-4 {
+  color: var(--color-tag-green);
+}
+
+.card_discription.harmony .header-4 {
+  color: var(--color-tag-pink);
+}

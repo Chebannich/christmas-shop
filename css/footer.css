@@ -1,0 +1,93 @@
+.footer {
+  color: var(--color-dark);
+}
+
+.footer .container {
+  padding: 60px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.footer_contacts {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.contacts_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 33%;
+  max-width: calc(33% - 4px);
+  gap: 12px;
+  padding: 20px 0;
+  background-color: #ECF3F8;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+  .contacts_item:hover a,
+  .contacts_item:hover .header-3 {
+    color: var(--color-primary);
+  }
+}
+
+.contacts_item a,
+.contacts_item .header-3,
+.footer_social span {
+  transition: 0.3s all linear;
+}
+
+
+
+
+.footer_social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.social_links {
+  display: flex;
+  gap: 12px;
+}
+
+.social_links a {
+  height: 40px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .social_links a:hover path {
+    stroke: var(--color-primary);
+    cursor: pointer;
+  }
+
+  .footer_social a:hover .caption {
+    color: var(--color-primary);
+  }
+}
+
+@media (max-width: 1060px) {
+  .footer_contacts {
+    flex-direction: column;
+  }
+
+  .contacts_item {
+    flex-basis: auto;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .footer .container {
+    padding: 60px 8px;
+  }
+}

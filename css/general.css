@@ -1,0 +1,25 @@
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+body.open-burger-menu {
+  overflow: hidden;
+}
+
+section {
+  background: var(--color-primary) url(../assets/img/bg-snow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1300px;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
+path {
+  transition: 0.3s all linear;
+}

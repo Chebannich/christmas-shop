@@ -1,0 +1,126 @@
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 12px;
+}
+
+/*---- logo ----*/
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  color: var(--color-dark);
+}
+
+.logo img {
+  height: 24px;
+  width: 24px;
+}
+
+/*---- nav ----*/
+.nav-burger {
+  display: none;
+  position: relative;
+
+  width: 40px;
+  height: 40px;
+}
+
+.line {
+  position: absolute;
+  width: 21px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: var(--color-dark);
+  top: 50%;
+  left: 50%;
+
+  transition: 0.6s all linear;
+}
+
+.line:nth-child(1) {
+  transform: translate(-50%, -5px);
+}
+
+.line:nth-child(2) {
+  transform: translate(-50%, 3px);
+}
+
+.nav-list {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-item.activ a {
+  background-color: var(--color-primary-10);
+  color: var(--color-primary);
+  cursor: auto;
+}
+
+.nav-item a {
+  padding: 12px 20px;
+  color: var(--color-dark);
+  border-radius: 12px;
+
+  transition: 0.3s all linear;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .nav-item a:not(.activ):hover {
+    background-color: var(--color-primary-10);
+    color: var(--color-primary);
+  }
+}
+
+
+.nav-list-768px {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  height: calc(100vh - 64px);
+  background-color: var(--color-static-white);
+  position: fixed;
+  left: 9999px;
+  transition: 0.6s all linear;
+}
+
+.nav-list-768px.open-burger-menu {
+  left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .header .container {
+    padding: 12px 8px;
+  }
+
+  .nav>.nav-list {
+    display: none;
+  }
+
+  .nav-burger {
+    display: block;
+  }
+
+  .nav-list-768px {
+    left: 768px;
+  }
+
+  .nav-burger.open-burger-menu .line:nth-child(1) {
+    transform: translate(-50%, -1px) rotate(45deg);
+  }
+
+  .nav-burger.open-burger-menu .line:nth-child(2) {
+    transform: translate(-50%, -1px) rotate(-45deg);
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .nav-list-768px {
+    left: 380px;
+  }
+}

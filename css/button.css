@@ -1,0 +1,74 @@
+/*---- all buttons ----*/
+.btn {
+  cursor: pointer;
+  border-radius: 20px;
+  height: 56px;
+
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+
+  transition: 0.3s all linear;
+}
+
+/*---- main buttons ----*/
+.btn-main {
+  padding: 20px 33px;
+  background-color: var(--color-dark);
+  color: var(--color-static-white);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-main:hover {
+    background-color: var(--color-static-white);
+    color: var(--color-dark);
+  }
+}
+
+/*---- slider buttons ----*/
+.btn-slider {
+  width: 56px;
+  color: var(--color-static-white);
+  border: 1px solid var(--color-static-white);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-slider:not(.inactive):hover {
+    background-color: var(--color-static-white);
+    color: var(--color-primary);
+    border: none;
+  }
+}
+
+.btn-slider.inactive {
+  color: var(--color-static-white-40);
+  border: 1px solid var(--color-static-white-40);
+  cursor: auto;
+}
+
+.btn-slider.inactive path {
+  stroke: var(--color-static-white-40);
+}
+
+/*---- scroll to top button ----*/
+.btn-up {
+  position: fixed;
+  cursor: pointer;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  right: 8px;
+  bottom: 8px;
+  width: 56px;
+  height: 56px;
+  border: 1px solid var(--color-primary);
+  border-radius: 50%;
+  background-color: var(--color-static-white);
+}
+
+.btn-up.active {
+  display: flex;
+}

@@ -1,0 +1,32 @@
+.tabs {
+  display: flex;
+  gap: 8px;
+}
+
+.tabs .action-s {
+  padding: 12px 20px;
+  border-radius: 12px;
+  transition: 0.3s all linear;
+  cursor: pointer;
+}
+
+.tabs .action-s.active {
+  background-color: var(--color-static-white-20);
+  cursor: auto;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .tabs .action-s:hover {
+    background-color: var(--color-static-white-20);
+  }
+}
+
+@media (max-width: 500px) {
+  .tabs {
+    gap: 0px;
+  }
+
+  .tabs .action-s {
+    padding: 12px 8px;
+  }
+}

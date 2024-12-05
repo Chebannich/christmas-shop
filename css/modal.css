@@ -1,0 +1,140 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--overlay);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_wrapper {
+  position: relative;
+
+  background-color: var(--color-content-background);
+
+  width: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+@media (max-width: 430px) {
+  .modal_wrapper {
+    width: 364px;
+  }
+}
+
+.modal-top {
+  background-position-y: -33px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 230px;
+  width: 100%;
+}
+
+.modal-bottom {
+  background-color: var(--color-static-white);
+  border-radius: 20px;
+  width: 100%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 20px;
+}
+
+.description .category.work {
+  color: var(--color-tag-purple);
+}
+.description .category.health {
+  color: var(--color-tag-green);
+}
+.description .category.harmony {
+  color: var(--color-tag-pink);
+}
+
+.superpowers {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  gap: 8px;
+}
+
+.superpowers-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5px;
+}
+
+.superpowers-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 11px;
+}
+
+.superpowers-row [data-modal="supperpowerName"] {
+  width: 185px;
+}
+
+.superpowers-row [data-modal="supperpowerValue"] {
+  display: flex;
+  width: 41px;
+}
+
+.snowflakes {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.close-btn {
+  position: absolute;
+
+  top: 12px;
+  right: 12px;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.close-btn .line {
+  width: 31px;
+  height: 2.5px;
+  border-radius: 2px;
+  transition: 0.3s all linear;
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+  .close-btn:hover .line{
+    background-color: var(--color-primary);
+  }
+}
+
+.close-btn .line:nth-child(1) {
+    transform: translate(-50%, -1px) rotate(45deg);
+}
+
+.close-btn .line:nth-child(2) {
+  transform: translate(-50%, -1px) rotate(-45deg);
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.modal.modal-open {
+  display: flex;
+}

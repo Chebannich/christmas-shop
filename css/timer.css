@@ -1,0 +1,25 @@
+.timer {
+  margin-top: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.countdown {
+  background-color: var(--color-static-white-40);
+  padding: 8px 12px 12px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown_unit {
+  width: 79px;
+}
+
+.separator {
+  width: 1px;
+  height: 20px;
+  background-color: var(--color-static-white-40);
+}

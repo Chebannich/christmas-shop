@@ -1,0 +1,13 @@
+:root {
+  --color-primary: #ff4646;
+  --color-primary-10: rgba(256, 70, 70, 10%);
+  --color-static-white: #ffffff;
+  --color-static-white-20: rgba(256, 256, 256, 20%);
+  --color-static-white-40: rgba(256, 256, 256, 40%);
+  --color-dark: #181c29;
+  --color-tag-purple: #4361ff;
+  --color-tag-pink: #ff43f7;
+  --color-tag-green: #06a44f;
+  --color-content-background: #ecf3f8;
+  --overlay: rgba(24, 28, 41, 80%);
+}

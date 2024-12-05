@@ -1,0 +1,31 @@
+.gifts {
+  background: var(--color-primary) url(../assets/img/bg-garland.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 20px;
+  color: var(--color-static-white);
+}
+
+.gifts .container {
+  padding: 60px 12px;
+}
+
+.gifts_header {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 480px;
+}
+
+.gifts_row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
