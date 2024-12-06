@@ -58,3 +58,9 @@ Feel free to reach out if you have any questions or suggestions:
 - Live Demo [Christmas Shop](https://chebannich.github.io/christmas-shop/)
 
 ---
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENCE) file for details.
+
+---
