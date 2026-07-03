@@ -13,7 +13,7 @@ export function timer() {
 
   // Get the current date and the target end date (January 1, 2025, 00:00:00 UTC)
   let currentDate = new Date();
-  const endDate = new Date(Date.UTC(2025, 0, 1, 0, 0, 0));;
+  const endDate = new Date(Date.UTC(2027, 0, 1, 0, 0, 0));;
 
   // Calculate the difference in seconds between the target and current date
   let timeLeft = (endDate.getTime() - currentDate.getTime()) / 1000;
